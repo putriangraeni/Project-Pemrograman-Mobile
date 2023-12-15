@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:id="@+id/buttomHome"/>
+
+    <item
+        android:title="Catatan"
+        android:icon="@drawable/catatan"
+        android:id="@+id/catatan"/>
+
+    <item
+        android:title="Rekap"
+        android:icon="@drawable/rekap"
+        android:id="@+id/rekap" />
+
+    <item
+        android:title="Laporan"
+        android:icon="@drawable/laporan"
+        android:id="@+id/laporan"/>
+</menu>

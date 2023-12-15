@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RekapFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/add_bg">
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="160dp"
+                android:layout_height="48dp"
+                android:id="@+id/kategori"
+                android:entries="@array/Kategori" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_bg"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:background="@drawable/rekap_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Pemasukan"
+                android:textSize="16sp"
+                android:textColor="@color/hijau_tua"/>
+            <TextView
+                android:id="@+id/totalPemasukan"
+                android:layout_marginLeft="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Rp. 0"
+                android:textColor="@color/hijau_tua"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Pengeluaran"
+                android:textSize="16sp"
+                android:textColor="@color/hijau_tua"/>
+            <TextView
+                android:id="@+id/totalPengeluaran"
+                android:layout_marginLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Rp. 0"
+                android:textColor="@color/hijau_tua"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saldo Akhir"
+                android:textSize="16sp"
+                android:textColor="@color/hijau_tua"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/saldoAkhir"
+                android:layout_marginLeft="95dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Rp. 0"
+                android:textColor="@color/hijau_tua"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

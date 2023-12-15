@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/add_bg">
+
+            <Spinner
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:id="@+id/kategori_id"
+                android:entries="@array/Kategori" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/add_bg"
+            android:layout_marginLeft="10dp">
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:id="@+id/jenis_id"
+                android:entries="@array/Jenis"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtDate"
+        android:background="@drawable/add_bg"
+        android:hint="Pilih tanggal"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:inputType="none"
+        android:onClick="showDatePickerDialog"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtJumlah"
+        android:background="@drawable/add_bg"
+        android:hint="Jumlah uang"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:inputType="numberDecimal"
+        android:digits="0123456789,."/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtKet"
+        android:background="@drawable/add_bg"
+        android:hint="Keterangan"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:text="Simpan"
+        android:layout_marginTop="30dp"
+        android:id="@+id/simpan_data"
+        android:background="@drawable/btn_save_bg"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

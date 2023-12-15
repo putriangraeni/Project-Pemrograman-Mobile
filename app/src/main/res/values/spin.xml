@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Jenis">
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+    </string-array>
+
+    <string-array name="Kategori">
+        <item>Kas Masjid</item>
+        <item>Kas Sosial</item>
+    </string-array>
+
+</resources>
